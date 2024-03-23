@@ -8,7 +8,7 @@ OLAP and OLTP are two types of data management systems that are used for storing
 
 OLAP stands for Online analytical processing that is optimized for complex data analysis and reporting. It is used to analyze aggregated data. For example, OLAP systems are used to generate reports, perform complex data analysis and identify trends for business. 
 
-- Data formatting: OLAP systems store data in multidimensional data models where the different dimensions represent different attributes of the data and the values represent measures for intersection the dimensions. 
+- \bf {Data formatting}: OLAP systems store data in multidimensional data models where the different dimensions represent different attributes of the data and the values represent measures for intersection the dimensions. 
 
 - Data architecture: Data read is prioritized over data write as the main purpose is analytics. Availability is also of not great importance. 
 
