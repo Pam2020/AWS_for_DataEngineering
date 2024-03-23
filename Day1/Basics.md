@@ -43,9 +43,36 @@ OLTP stands for Online transaction processing which is optimized for transaction
 |**Volume of data**|GBs|TBs or PBs|
 |**Response times**| seconds or minutes | milliseconds | 
 
-
-
+   
 ### Normal Forms:
+
+Normalization is the process of segregating data into different tables(entities) and related them using unique identifiers. This is important to protect data from insertion, update and deletion anamolies. Ensures data integrity and data consistency. There are 4 normal forms (NFs):
+
+1. **1st NF**:
+   - Attributes/column values have to be single valued - atomic - no repeating groups
+   - values have to be of same type
+   - attributes must be unique
+   - order must not matter
+   - each row must be uniquely identifiable - primary key required
+2. **2nd NF**:
+   - it has to be in 1st NF and
+   - each non-key attribute must depend on the entire primary key (if primary key is composite) - **no partial dependency**
+3. **3rd NF**:
+   - it has to be in 1st and 2nd NF
+   - non of the non-key attributes must depend on other non-key attributes - **no transitive dependency**
+   - **Boyce-Codd Normal Form**: It is a higher version of 3rd NF. Every attribute in a table should depend on the key, the whole key, and nothing but the key.
+4. **4th NF**:
+   - it has to be in 1st, 2nd , 3rd and BCNF.
+   - it should not have any multivalued dependencies - in the below example, Sid->Cid, Sname-> Cid, Sname->Cname are multi-valued dependencies
+   Example:
+   |Sid|Sname|Cid|Cname|
+   |:--|:----|:--|:----|
+   |S1 |A | C1 |C|
+   |S1 |A |C2| D|
+   |S2| B| C1| C|
+   |S2| B| C2|D|
+
+
 
 
 ### References:
