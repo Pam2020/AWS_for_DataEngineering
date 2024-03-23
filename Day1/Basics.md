@@ -44,7 +44,7 @@ OLTP stands for Online transaction processing which is optimized for transaction
 |**Response times**| seconds or minutes | milliseconds | 
 
    
-### Normal Forms:
+### 3. Normal Forms:
 
 Normalization is the process of segregating data into different tables(entities) and related them using unique identifiers. This is important to protect data from insertion, update and deletion anamolies. Ensures data integrity and data consistency. There are 4 normal forms (NFs):
 
@@ -64,7 +64,6 @@ Normalization is the process of segregating data into different tables(entities)
 4. **4th NF**:
    - it has to be in 1st, 2nd , 3rd and BCNF.
    - it should not have any multivalued dependencies - in the below example, Sid->Cid, Sname-> Cid, Sname->Cname are multi-valued dependencies
-   Example:
 
    |Sid|Sname|Cid|Cname|
    |:--|:----|:--|:----|
@@ -72,6 +71,11 @@ Normalization is the process of segregating data into different tables(entities)
    |S1 |A |C2| D|
    |S2| B| C1| C|
    |S2| B| C2|D|
+
+### 4. Dimension vs Fact Tables
+
+### 5. Snowflake vs Star Schemas
+
 
 
 
