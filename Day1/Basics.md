@@ -36,12 +36,23 @@ OLTP stands for Online transaction processing which is optimized for transaction
 
 |      | OLTP | OLAP |
 |:-----|:-----|:-----|                                                                              
-|**Purpose:**| OLAP helps analyze large volumes of data for data analytics | Process transactions |
-|**Source:** | Historical and aggregated data from multiple sources | Real-time and transactional data from a single source |
+|**Purpose**| OLAP helps analyze large volumes of data for data analytics | Process transactions |
+|**Source** | Historical and aggregated data from multiple sources | Real-time and transactional data from a single source |
 |**Structure** | Multidimensional/relational databases | Relational databases |
 |**Model**|star or snowflake schema - datawarehouse schemas| Normalized/Denormalized models |
 |**Volume of data**|GBs|TBs or PBs|
 |**Response times**| seconds or minutes | milliseconds | 
+
+
+
+### Normal Forms:
+
+
+### References:
+1. https://aws.amazon.com/compare/the-difference-between-olap-and-oltp/#:~:text=OLAP%20vs.%20OLTP-,Online%20analytical%20processing%20(OLAP)%20and%20online%20transaction%20processing%20(OLTP,processing%20and%20real%2Dtime%20updates.
+2. https://www.geeksforgeeks.org/multidimensional-data-model/
+
+
 
 
 
