@@ -16,7 +16,7 @@ OLAP stands for Online analytical processing that is optimized for complex data 
 
 - **Storage and computer requirements**: Acts as a centralized data store, storage requirements range from terabytes to petabytes. Compute-intensive data reads. 
 
-- OLAP is used to analyze data collected through OLTP. For example, popular products are identified and used for inventory budgeting.
+- OLAP is used to analyze data collected through OLTP. For example, popular products are identified and used for inventory budgeting, predict customer behaviour based on purchase trends  etc.
 
 ### OLTP:
 
@@ -34,12 +34,14 @@ OLTP stands for Online transaction processing which is optimized for transaction
 
 ### 2. Differences between OLAP and OLTP
 
-| OLTP | OLAP |
-|:-----|:-----|
-|                                                                                    OLTP:
-**Purpose:** OLAP helps analyze large volumes of data for data analytics                     Process transactions
-**Source:**  Historical and aggregated data from multiple sources                            Real-time and transactional data from a single source
-**Structure** Multidimensional/relational databases                                          Relational databases
+|      | OLTP | OLAP |
+|:-----|:-----|:-----|                                                                              
+|**Purpose:**| OLAP helps analyze large volumes of data for data analytics | Process transactions |
+|**Source:** | Historical and aggregated data from multiple sources | Real-time and transactional data from a single source |
+|**Structure** | Multidimensional/relational databases | Relational databases |
+|**Model**|star or snowflake schema - datawarehouse schemas| Normalized/Denormalized models |
+|**Volume of data**|GBs|TBs or PBs|
+|**Response times**| seconds or minutes | milliseconds | 
 
 
 
