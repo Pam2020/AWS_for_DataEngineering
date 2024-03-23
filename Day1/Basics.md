@@ -65,6 +65,7 @@ Normalization is the process of segregating data into different tables(entities)
    - it has to be in 1st, 2nd , 3rd and BCNF.
    - it should not have any multivalued dependencies - in the below example, Sid->Cid, Sname-> Cid, Sname->Cname are multi-valued dependencies
    Example:
+
    |Sid|Sname|Cid|Cname|
    |:--|:----|:--|:----|
    |S1 |A | C1 |C|
