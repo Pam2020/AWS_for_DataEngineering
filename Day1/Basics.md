@@ -2,7 +2,7 @@
 
 ### 1. OLAP vs OLTP
    
-OLAP and OLTP are two types of data management systems that are used for storing and analyzing data. Both are used to query existing data and store new data. 
+OLAP and OLTP are two types of data management systems that are used for storing and analyzing data. Both are used to query existing data and store new data. Businesses use both OLAP and OLTP systems together to manage transactions as well as analytics/reporting needs. 
 
 ### OLAP:
 
@@ -31,5 +31,12 @@ OLTP stands for Online transaction processing which is optimized for transaction
 - **Storage and computer requirements**: Storage requirements are in GBs as data can be cleared after transferring into an OLAP system. Compute-intensive as well.  
 
 - Examples include, OLTP is used to process transactions in real-time, update inventory levels, manage rewards and returns of customer accounts etc. 
+
+### 2. Differences between OLAP and OLTP
+
+OLAP:                                                                                        OLTP:
+**Purpose:** OLAP helps analyze large volumes of data for data analytics                     Process transactions
+**Source:**  Historical and aggregated data from multiple sources                            Real-time and transactional data from a single source
+**Structure** Multidimensional/relational databases                                          Relational databases
 
 
