@@ -84,17 +84,34 @@ Normalization is the process of segregating data into different tables(entities)
 There can be multiple dimesion tables but there can be only one fact table. 
 
 **Types of dimesions**:
+1. Slowly changing dimension:
+This is a dimension table that slowly changes over time but not very frequently like everyday. For eaxmple, the address of a customer might change in future. There are 3 types of SCDs - SCD Type 1 (no history saved), Type 2 (complete history is mainained with start_date and end_date to know if the record is valid or not) and Type3 (only limited history is stored - current & previous record for example).
+
+2. Conformed dimension:
+A dimension that can be used for multiple fact tables - for example, place or time dimension.
+
+3. Degenerate dimension:
+A dimension that is found in the fact table (not as a foregin key of a dimesion table) then it is called a degenerate dimension.
+
+4. Junk dimension:
+Unrelated small dimesions that can be put together into a single dimension.
+
+5. Static dimension:
+This is a dimension that doesn't change over time. Example includes gender and status. 
 
 ### 5. Snowflake vs Star Schemas
 
 
+**Star Schema**: It resembles a star and it is the simplest type of data warehouse schema. In this schema, there is a fact table that is surrounded by dimension tables. A single join can retrieve data from the dimesion and the fact tables. Here dimension tables might not be normalized. 
 
-
+**Snowflake Schema**: It builds on the star schema by adding more dimesions to the existing dimesions thereby resebling a snowflake structure. In this schema, there is a fact table surrounded by dimension tables which are again surrounded by dimension tables. Here multiple joins are required to get data from dimensions and fact tables. Basically, the dimension tables in this schema are normalized and thereby split into multiple dimension tables. 
 
 ### References:
 1. https://aws.amazon.com/compare/the-difference-between-olap-and-oltp/#:~:text=OLAP%20vs.%20OLTP-,Online%20analytical%20processing%20(OLAP)%20and%20online%20transaction%20processing%20(OLTP,processing%20and%20real%2Dtime%20updates.
 2. https://www.geeksforgeeks.org/multidimensional-data-model/
-
+3. https://abhimarichi.medium.com/types-of-dimension-tables-in-a-data-warehouse-bf6b48daf166
+4. https://www.studytonight.com/dbms/database-normalization.php
+5. https://www.guru99.com/star-snowflake-data-warehousing.html
 
 
 
