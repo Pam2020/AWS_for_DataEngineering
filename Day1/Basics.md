@@ -54,13 +54,16 @@ Normalization is the process of segregating data into different tables(entities)
    - attributes must be unique
    - order must not matter
    - each row must be uniquely identifiable - primary key required
+     
  **2nd NF**:
    - it has to be in 1st NF and
    - each non-key attribute must depend on the entire primary key (if primary key is composite) - **no partial dependency**
+     
  **3rd NF**:
    - it has to be in 1st and 2nd NF
    - non of the non-key attributes must depend on other non-key attributes - **no transitive dependency**
-   - **Boyce-Codd Normal Form**: It is a higher version of 3rd NF. Every attribute in a table should depend on the key, the whole key, and nothing but the key.
+   - **Boyce-Codd Normal Form**: It is a higher version of 3rd NF. Every attribute in a table should depend on the key, the whole key, and nothing but the key
+     
  **4th NF**:
    - it has to be in 1st, 2nd , 3rd and BCNF.
    - it should not have any multivalued dependencies - in the below example, Sid->Cid, Sname-> Cid, Sname->Cname are multi-valued dependencies
