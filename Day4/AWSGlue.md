@@ -15,3 +15,11 @@ The goal is to ingest data using AWS Glue (ETL tool by AWS). To ingest data we u
 #### JSON version of the Policy expalined
 
 ![JSON](https://github.com/Pam2020/AWS_for_DataEngineering/blob/main/Day4/JSON.png)
+
+Version: Gives the version of the policy, different versions are stored in aws for version control
+
+Statement: This is the main element of the policy, this contains multiple sets of (action, resource and effect...generally written in the form "Statement": [{...},{...},{...}]) which gives the effect/permission for the given actions on the given reosurce
+
+- Action: Action key value contains all the actions that are allowed to be performed by the Service that is using the policy
+- Resouce: This key value gives the arn information of the sources that can be accessed by the service/role
+- Effect: This is the permission - allow or deny
