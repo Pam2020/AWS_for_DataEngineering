@@ -1,10 +1,10 @@
-## Data Ingestion Lab
+# Data Ingestion Lab
 
-### Systen Design
+## System Design
 
 ![SystemDesign](https://github.com/Pam2020/AWS_for_DataEngineering/blob/main/Day4/SystemDesign_AWSGlue.png)
 
-#### Reverse engineering: Analysis of the system design
+### Reverse engineering: Analysis of the system design
 
 The goal is to ingest data using AWS Glue (ETL tool by AWS). To ingest data we use the Glue crawler to crawl the files and create a reference table. Here is the reverse engineering process:
 
@@ -14,7 +14,7 @@ The goal is to ingest data using AWS Glue (ETL tool by AWS). To ingest data we u
   
 3. Before this, we create S3 buckets and add files from our local machine into AWS Cloud.
 
-#### JSON version of the Policy expalined
+### JSON version of the Policy expalined
 
 ![JSON](https://github.com/Pam2020/AWS_for_DataEngineering/blob/main/Day4/JSONnew.png)
 
