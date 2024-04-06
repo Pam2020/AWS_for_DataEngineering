@@ -14,4 +14,4 @@ The goal is to ingest data using AWS Glue (ETL tool by AWS). To ingest data we u
 
 #### JSON version of the Policy expalined
 
-![JSON]()
+![JSON](https://github.com/Pam2020/AWS_for_DataEngineering/blob/main/Day4/JSON.png)
