@@ -10,4 +10,6 @@ Data mesh is based on 4 main principles:
 Building a data mesh:
 
 1. Analyze data: Identify different business domains and analyze what data goes in what domain with effective correlation of data
-2. 
+2. Implement global data governance policies: central IT/data team needs to identify reporting, authentication and compliance standards for the data mesh
+3. Build your self-serve data platform: build user friendly data platforms (self-serve) that can be used by domain teams to handle their data - hide underlying technical complexity - include capabilities like data encryption, data product schema, governance and access control, data product logging and monitoring, caching for improved performance
+4. Choose right technologies: Shift use of data warehouses/data lakes into multiple decentralized data repositories - distributed data product ownership over central data platform architecture 
