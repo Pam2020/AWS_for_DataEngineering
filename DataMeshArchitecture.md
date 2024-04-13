@@ -1,5 +1,9 @@
 # Data Mesh 
 
+
+![SystemDesign](https://github.com/Pam2020/AWS_for_DataEngineering/edit/main/DataMeshArchitecture.md#:~:text=BDB%2D2091%2D-,image001,-.png)
+
+
 Data mesh is based on 4 main principles:
 
 1. Domain ownership: Data management is organized around business functions or domains
