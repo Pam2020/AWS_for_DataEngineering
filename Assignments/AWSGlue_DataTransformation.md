@@ -39,4 +39,4 @@ Create a visual Glue job as follows:
 
 ![Greater than 2000]()
 
-![Lesser than 2000]()
+![Lesser than 2000](https://github.com/Pam2020/AWS_for_DataEngineering/blob/81bad4d38f20a8b72a4f810238514093f48e66d2/Images/Result_lesserthan.png)
