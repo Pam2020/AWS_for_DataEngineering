@@ -19,7 +19,8 @@ The crawled data is stored in two different tables in the same database.
 Create a Visual Glue job as follows:
 - Choose the reference tables in the Data catalog (created with the help of crawlers), we have two different sources for the two different files.
 
-<img src="https://github.com/Pam2020/AWS_for_DataEngineering/blob/ceb0012dc7de2913978671d14d4de1782afd3aaa/Images/Source_join.png" width="700" height="400">
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/ceb0012dc7de2913978671d14d4de1782afd3aaa/Images/Source_join.png)
+
 
 - Use a JOIN transformation to join these two tables, choose inner join as the type of join and choose the primary key equal to right primary key as the join condition.
 
