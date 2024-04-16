@@ -2,7 +2,7 @@
 
 ## System Design
 
-![SystemDesign](https://github.com/Pam2020/AWS_for_DataEngineering/blob/main/Day4/SystemDesign_AWSGlue.png)
+![SystemDesign](https://github.com/Pam2020/AWS_for_DataEngineering/blob/c35e4d3cc0d699abb2e3f2037be6217396a6dccd/Images/SystemDesign_AWSGlue.png)
 
 ### Reverse engineering: Analysis of the system design
 
