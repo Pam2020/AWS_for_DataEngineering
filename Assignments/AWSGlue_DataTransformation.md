@@ -2,7 +2,7 @@
 
 ### Work Flow:
 
-![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/ceb0012dc7de2913978671d14d4de1782afd3aaa/Images/)
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/ceb0012dc7de2913978671d14d4de1782afd3aaa/Images/SystemDesign_AWSGlue.png)
 
 **Step 1: Store Data in S3** 
 - Store the data files in S3 buckets. We have two csv files. Store both these files in different folders in an S3 bucket. 
