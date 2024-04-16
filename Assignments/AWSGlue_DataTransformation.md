@@ -37,7 +37,7 @@ Create a visual Glue job as follows:
 
 - Now, the conditional router is used to split the resultant dataset into two different tables based on the condition year < 2000.
 
-![]()
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/cf43857afc9e222587ca068b95864dcd1497bf00/Images/DefiningCR.png)
 
 - The output data and default data are stored in two seperate folders in S3 as parquet files, the data catalog is also updated with the new tables.
 
