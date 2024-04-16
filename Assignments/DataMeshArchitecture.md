@@ -1,7 +1,6 @@
 # Data Mesh 
 
-
-![SystemDesign](BDB-2091-image001.png)
+![System Design]()
 
 
 Data mesh is based on 4 main principles:
