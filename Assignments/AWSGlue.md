@@ -16,7 +16,7 @@ The goal is to ingest data using AWS Glue (ETL tool by AWS). To ingest data we u
 
 ### JSON version of the Policy expalined
 
-![JSON](https://github.com/Pam2020/AWS_for_DataEngineering/blob/main/Day4/JSONnew.png)
+![JSON](https://github.com/Pam2020/AWS_for_DataEngineering/blob/78f77e1cc9e9cc570278b48f7d5fa1867ab7f970/Images/JSONnew.png)
 
 1. **Version**: Gives the version of the policy, different versions are stored in aws for version control
 
