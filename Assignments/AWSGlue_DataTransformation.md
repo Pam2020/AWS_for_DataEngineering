@@ -38,7 +38,7 @@ Create a Visual Glue job as follows:
 
 ![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/cf43857afc9e222587ca068b95864dcd1497bf00/Images/DefiningCR.png)
 
-- The output data and default data are stored in two seperate folders in S3 as parquet files, the data catalog is also updated with the new tables.
+- The **output_group** data and **default_group** data are stored in two seperate folders in S3 as parquet files, the data catalog is also updated with the new tables.
 
 ![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/c3f8181bb33e8f0ff0730adf06580ce885c42e6e/Images/ConditionalRouter.png)
 
