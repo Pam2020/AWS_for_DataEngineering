@@ -1,6 +1,6 @@
-# Data Transformation Lab
+## Data Transformation Lab
 
-## Work Flow:
+### Work Flow:
 
 **Step 1**: 
 
