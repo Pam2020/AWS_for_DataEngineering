@@ -19,8 +19,24 @@ The crawled data is stored in two different tables in the same database.
 
 Create a visual Glue job as follows:
 - Choose the reference tables in the Data catalog (created with the help of crawlers), we have two different sources for the two different files.
-- Use a JOIN transformation to join these two tables, choose inner join as the type of join and choose the primary key equal to right primary key as the join condition. 
+
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/dda8067b18a4311e54a58e4619a829ff731810b1/Images/BDB-2091-image001.png)
+
+- Use a JOIN transformation to join these two tables, choose inner join as the type of join and choose the primary key equal to right primary key as the join condition.
+
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/dda8067b18a4311e54a58e4619a829ff731810b1/Images/BDB-2091-image001.png)
+
 - When joining, as the two tables have common columns, the columns of one of the tables are tagged using the change schema transformation - right resolve the table.
 - Now, the conditional router is used to split the resultant dataset into two different tables based on the condition year < 2000.
+
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/dda8067b18a4311e54a58e4619a829ff731810b1/Images/BDB-2091-image001.png)
+
 - The output data and default data are stored in two seperate folders in S3 as parquet files, the data catalog is also updated with the new tables.
-- These tables are queried in athena to check if the transformations and conditions are applied correctly. 
+
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/dda8067b18a4311e54a58e4619a829ff731810b1/Images/BDB-2091-image001.png)
+
+- These tables are queried in athena to check if the transformations and conditions are applied correctly.
+
+![Greater than 2000]()
+
+![Lesser than 2000]()
