@@ -3,15 +3,15 @@
 ### Work Flow:
 
 **Step 1: Store Data in S3** 
-Store the data files in S3 buckets. We have two csv files. Store both these files in different folders in an S3 bucket. 
+- Store the data files in S3 buckets. We have two csv files. Store both these files in different folders in an S3 bucket. 
 
 **Step 2: Update Policy attached to IAM Glue Service Role**
 
-Set S3 bucket access permissions for the IAM Glue Service role that we created before. For this we include the new s3 locations under resources in the glue custom policy that we created in the Ingestion Lab. We can also create a new policy if needed. 
+- Set S3 bucket access permissions for the IAM Glue Service role that we created before. For this we include the new s3 locations under resources in the glue custom policy that we created in the Ingestion Lab. We can also create a new policy if needed. 
 
 **Step 3: Create Crawlers and Crawl data into the Data Catalog**: 
 
-Create two different crawlers to crawl the two different s3 locations where these two files are stored. We use the same IAM role for both.
+- Create two different crawlers to crawl the two different s3 locations where these two files are stored. We use the same IAM role for both.
 The crawled data is stored in two different tables in the same database.
 
 **Step 4: Create a Visual ETL Job to perform the transformations**
@@ -19,7 +19,7 @@ The crawled data is stored in two different tables in the same database.
 Create a Visual Glue job as follows:
 - Choose the reference tables in the Data catalog (created with the help of crawlers), we have two different sources for the two different files.
 
-![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/ceb0012dc7de2913978671d14d4de1782afd3aaa/Images/Source_join.png)
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/ceb0012dc7de2913978671d14d4de1782afd3aaa/Images/Source_join.png = =250x250)
 
 
 - Use a JOIN transformation to join these two tables, choose inner join as the type of join and choose the primary key equal to right primary key as the join condition.
