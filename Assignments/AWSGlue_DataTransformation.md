@@ -24,7 +24,7 @@ Create a visual Glue job as follows:
 
 - Use a JOIN transformation to join these two tables, choose inner join as the type of join and choose the primary key equal to right primary key as the join condition.
 
-![]()
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/353c59a5fdb5e51fb17b7a9ab0966ec2d047f097/Images/Join_conditions.png)
 
 - When joining, as the two tables have common columns, the columns of one of the tables are tagged using the change schema transformation - right resolve the table.
 
