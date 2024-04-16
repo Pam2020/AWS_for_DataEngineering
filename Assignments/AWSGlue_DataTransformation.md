@@ -4,11 +4,11 @@
 
 **Step 1**: 
 
-Store the data files in S3 buckets: We have two csv files. Store both these files in different folders in an S3 bucket. 
+Store the data files in S3 buckets. We have two csv files. Store both these files in different folders in an S3 bucket. 
 
 **Step 2**:
 
-Set S3 bucket access permissions for the IAM Glue Service role that we created before. 
+Set S3 bucket access permissions for the IAM Glue Service role that we created before. For this we include the new s3 locations under resources in the glue custom policy that we created in the Ingestion Lab. We can also create a new policy if needed. 
 
 **Step 3**: 
 
