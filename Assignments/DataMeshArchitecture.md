@@ -1,6 +1,6 @@
 # Data Mesh 
 
-![System Design](Images/BDB-2091-image001.png)
+![System Design](AWS_for_DataEngineering/Images/BDB-2091-image001.png)
 
 
 Data mesh is based on 4 main principles:
