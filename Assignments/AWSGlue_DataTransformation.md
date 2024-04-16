@@ -3,7 +3,6 @@
 ### Work Flow:
 
 **Step 1: Store Data in S3** 
-
 Store the data files in S3 buckets. We have two csv files. Store both these files in different folders in an S3 bucket. 
 
 **Step 2: Update Policy attached to IAM Glue Service Role**
