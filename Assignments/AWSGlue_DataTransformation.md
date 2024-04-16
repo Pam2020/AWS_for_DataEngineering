@@ -22,15 +22,18 @@ Create a visual Glue job as follows:
 
 ![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/ceb0012dc7de2913978671d14d4de1782afd3aaa/Images/Source_join.png)
 
+
 - Use a JOIN transformation to join these two tables, choose inner join as the type of join and choose the primary key equal to right primary key as the join condition.
 
 ![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/353c59a5fdb5e51fb17b7a9ab0966ec2d047f097/Images/Join_conditions.png)
+
 
 - When joining, as the two tables have common columns, the columns of one of the tables are tagged using the change schema transformation - right resolve the table.
 
 - To remove null fields the remove null rows transform was used, but this only removes rows with all fields null.
 
 ![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/3801d6398e396dc37669adb12b35d426d3e85cd0/Images/Join_nullrows.png)
+
 
 - Now, the conditional router is used to split the resultant dataset into two different tables based on the condition year < 2000.
 
@@ -42,8 +45,10 @@ Create a visual Glue job as follows:
 
 - These tables are queried in athena to check if the transformations and conditions are applied correctly.
 
+**Resultant table - Year greater than 2000**
+
 ![Greater than 2000](https://github.com/Pam2020/AWS_for_DataEngineering/blob/e0d8e67320a8c71d1b04fe94de8d4ba189668255/Images/Result_greaterthan.png)
 
-
+**Resultant table - Year lesser than or equal to 2000**
 
 ![Lesser than 2000](https://github.com/Pam2020/AWS_for_DataEngineering/blob/81bad4d38f20a8b72a4f810238514093f48e66d2/Images/Result_lesserthan.png)
