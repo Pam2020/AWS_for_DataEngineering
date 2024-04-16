@@ -27,6 +27,11 @@ Create a visual Glue job as follows:
 ![]()
 
 - When joining, as the two tables have common columns, the columns of one of the tables are tagged using the change schema transformation - right resolve the table.
+
+- To remove null fields the remove null rows transform was used, but this only removes rows with all fields null.
+
+![](https://github.com/Pam2020/AWS_for_DataEngineering/blob/3801d6398e396dc37669adb12b35d426d3e85cd0/Images/Join_nullrows.png)
+
 - Now, the conditional router is used to split the resultant dataset into two different tables based on the condition year < 2000.
 
 ![]()
