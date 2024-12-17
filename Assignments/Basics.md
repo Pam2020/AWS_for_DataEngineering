@@ -34,13 +34,13 @@ OLTP stands for Online transaction processing which is optimized for transaction
 
 ### 2. Differences between OLAP and OLTP
 
-|      | OLTP | OLAP |
+|      | OLAP | OLTP |
 |:-----|:-----|:-----|                                                                              
 |**Purpose**| OLAP helps analyze large volumes of data for data analytics | Process transactions |
 |**Source** | Historical and aggregated data from multiple sources | Real-time and transactional data from a single source |
 |**Structure** | Multidimensional/relational databases | Relational databases |
 |**Model**|star or snowflake schema - datawarehouse schemas| Normalized/Denormalized models |
-|**Volume of data**|GBs|TBs or PBs|
+|**Volume of data**|TBs or PBs| GBs |
 |**Response times**| seconds or minutes | milliseconds | 
 
    
